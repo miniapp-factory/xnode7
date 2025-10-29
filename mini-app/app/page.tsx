@@ -1,10 +1,9 @@
 import { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 
-export const title = "XnodeOS";
-export const description = "XnodeOS is a NixOS-based operating system that focuses on no-code deployment with maximum security built in by default.";
-
 export async function generateMetadata(): Promise<Metadata> {
+  const title = "XnodeOS";
+  const description = "XnodeOS is a NixOS-based operating system that focuses on no-code deployment with maximum security built in by default.";
   const url = process.env.NEXT_PUBLIC_URL ?? '';
   return {
     title,
